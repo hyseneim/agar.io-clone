@@ -2,7 +2,7 @@
   "name": "agar-clone",
   "version": "1.0.0",
   "description": "A simple Agar.io clone",
-  "main": "server/server.js",
+  "main": "src/server/server.js",
   "scripts": {
     "build": "gulp build",
     "start": "gulp run",

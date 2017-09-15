@@ -23,7 +23,7 @@ function startGame(type) {
 
     global.screenWidth = window.innerWidth;
     global.screenHeight = window.innerHeight;
-
+	document.querySelector('body').style.overflow = 'hidden';
     document.getElementById('startMenuWrapper').style.maxHeight = '0px';
     document.getElementById('gameAreaWrapper').style.opacity = 1;
     if (!socket) {
@@ -220,7 +220,7 @@ function setupSocket(socket) {
                 if(leaderboard[i].name.length !== 0)
                     status += '<span class="me">' + (i + 1) + '. ' + leaderboard[i].name + "</span>";
                 else
-                    status += '<span class="me">' + (i + 1) + ". An unnamed cell</span>";
+                    status += '<span class="me">' + (i + 1) + ". An unnamed cell" + "</span>";
             } else {
                 if(leaderboard[i].name.length !== 0)
                     status += (i + 1) + '. ' + leaderboard[i].name;
@@ -361,6 +361,8 @@ function drawPlayers(order) {
 
         graph.strokeStyle = 'hsl(' + userCurrent.hue + ', 100%, 45%)';
         graph.fillStyle = 'hsl(' + userCurrent.hue + ', 100%, 50%)';
+        //graph.strokeStyle = userCurrent.hue.border;
+        //graph.fillStyle = userCurrent.hue.fill;
         graph.lineWidth = playerConfig.border;
 
         var xstore = [];
