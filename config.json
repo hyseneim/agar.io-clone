@@ -17,8 +17,8 @@
 		"splitMass": 180
 	},
 	"player": {
-		"initialSpeed": 15,
-		"decreasePlayerSpeed": true
+		"initialSpeed": 10,
+		"decreasePlayerSpeed": false
 	},
     "gameWidth": 5000,
     "gameHeight": 5000,

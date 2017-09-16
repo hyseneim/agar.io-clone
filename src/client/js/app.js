@@ -67,10 +67,11 @@ window.onload = function() {
         }
     };
 
-    var settingsMenu = document.getElementById('settingsButton');
+    /* var settingsMenu = document.getElementById('settingsButton'); */
     var settings = document.getElementById('settings');
     var instructions = document.getElementById('instructions');
 
+    /*
     settingsMenu.onclick = function () {
         if (settings.style.maxHeight == '300px') {
             settings.style.maxHeight = '0px';
@@ -78,6 +79,7 @@ window.onload = function() {
             settings.style.maxHeight = '300px';
         }
     };
+    */
 
     playerNameInput.addEventListener('keypress', function (e) {
         var key = e.which || e.keyCode;
